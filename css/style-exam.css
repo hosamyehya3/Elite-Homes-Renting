@@ -1,0 +1,181 @@
+:root{
+    --maincolor:
+        rgb(117, 6, 229);
+    --border-color:black;
+   
+}
+.maincolor{
+    color:  rgb(117, 6, 229) !important ;
+    
+}
+.maincolor-btn{
+    background-color:rgb(117, 6, 229) !important  ;
+}
+body{
+       font-family: "Exo", sans-serif;
+       background-color: rgb(249, 250, 251);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+h1 , h2 , h3 , h4 , h5{
+    cursor: pointer;
+}
+.navbar .collapse ul li a:hover{
+    color: var(--maincolor);
+    font-weight: 700;
+
+}
+.navbar .collapse ul li:hover .moving{
+    width: 100%;
+    height: 2px;
+    background-color: var(--maincolor);
+    
+}
+/* .content-navbar{
+    min-height: 75vh;
+  
+} */
+.home-properties{
+    width: 100% !important;
+    min-height: 100vh;
+   
+}
+.detail-villa{
+    font-size: 13px;
+}
+.moving{
+    
+ display: block;
+ width:0%;
+height: 2px;
+ background-color: transparent;
+transition-duration: .5s;
+transition-property: width;
+ transition-timing-function: ease-in;
+}
+.size-villa{
+    width:75px;
+    height: 75px;
+    border-radius: 20px;
+}
+.photo-header{
+   background-image:linear-gradient(to bottom , rgba(117, 6, 229, 0.815) )  , url(../img/hero-bg-img.png);
+   background-size:cover;
+   background-position: center;
+   width: 100%;
+   min-height: 100vh;
+}
+.buttons{
+    width:75%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+
+
+
+
+.shape-service::after{
+    content: "";
+    width: 50px; 
+    height: 3px;
+    background-color: var(--maincolor);
+    border-top-right-radius:50% ;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right:540px;
+}
+.shape-service::before{
+    content: "";
+    width: 50px; 
+    height: 3px;
+    background-color: var(--maincolor);
+    border-top-left-radius:50% ;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left:540px;
+}
+
+
+
+.shape-service{
+    width: 150px; 
+    padding: 5px;
+    color: var(--maincolor);
+    text-align: center;
+    background-color: rgb(249, 245, 255);
+    font-size: 15px;
+    border: 2px solid rgb(221, 214, 255);
+
+}
+
+.color-span1{color:rgb(178, 98, 199) ;}
+.color-span2{color:rgb(187, 109, 180) ;}
+.color-span3{color: rgb(205, 126, 148);}
+.color-span4{color: rgb(229, 141, 95);}
+.color-span5{color: rgb(250, 152, 0);}
+.color-service{
+    color: rgb(158, 54, 237);
+}
+.nav-pills li button[data-bs-target]{
+color: #000;
+
+}
+.nav-pills .nav-link.active{
+    background-color: rgb(245, 243, 255);
+   color: var(--maincolor);
+   border-radius: 0;
+   border-bottom: 2px solid var(--maincolor);
+}
+.shape-scop{
+width: fit-content;
+height: fit-content;
+padding: 10px;
+background-color: rgb(237, 233, 254);
+border-radius: 10px;
+}
+.shape-selling{
+    width: 50px;
+    height: 50px;
+   
+    background-color: rgb(219, 252, 231);
+    border-radius: 10px;
+}
+.Success-Rate{
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    top:450px;
+    left:10px;
+   
+}
+.selling-rate{
+       width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+  right: 0px;
+  bottom: 10px;
+   
+}
+.rent{
+    background-color: rgb(243, 232, 255);
+}
+.rent-rate{
+        width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+      top:450px;
+    left:10px;
+}
