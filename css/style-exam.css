@@ -72,8 +72,22 @@ h5 {
   height: 75px;
   border-radius: 20px;
 }
+.location-bg{
+    width:250px;
+    min-height: 20vh;
+    border-radius: 20px;
+    padding: 10px;
+    background-image:linear-gradient(to right, rgba(117, 6, 229, 0.377)) , url(../img/new-york.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.location-bg2{
+      background-image:linear-gradient(to right, rgba(117, 6, 229, 0.377)) , url(../img/los-angeles.jpeg);
+}
+.location-bg3{
+          background-image:linear-gradient(to right, rgba(117, 6, 229, 0.377)) , url(../img/miami.jpeg);
 
-
+}
 
 .property-card {
   background: #fff;
