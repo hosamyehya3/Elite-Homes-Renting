@@ -3,6 +3,10 @@
   --border-color: rgb(243, 244, 246);
 
 }
+::selection{
+    background-color: var(--maincolor);
+    color: #fff;
+}
 .maincolor {
   color: rgb(117, 6, 229) !important ;
 }
@@ -46,10 +50,7 @@ h5 {
   height: 2px;
   background-color: var(--maincolor);
 }
-/* .content-navbar{
-    min-height: 75vh;
-  
-} */
+
 .home-properties {
   width: 100% !important;
   min-height: 100vh;
@@ -71,6 +72,106 @@ h5 {
   height: 75px;
   border-radius: 20px;
 }
+
+
+
+.property-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.property-img-wrapper {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.property-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.property-card:hover .property-img {
+  transform: scale(1.1);
+}
+
+.badge-featured,
+.badge-new,
+.badge-price-drop {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.badge-featured {
+  background-color: #7c3aed;
+}
+
+.badge-new {
+  background-color: #16a34a;
+}
+
+.badge-price-drop {
+  background-color: #f59e0b;
+}
+
+.icon-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon-heart i {
+  color: #666;
+  transition: 0.3s;
+}
+
+.icon-heart:hover i {
+  color: red;
+}
+
+.badge-photos {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 800;
+  color: #7c3aed;
+}
+
+.meta {
+  font-size: 14px;
+  color: #666;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
 .photo-header {
   background-image:
     linear-gradient(to bottom, rgba(117, 6, 229, 0.815)),
@@ -85,7 +186,39 @@ h5 {
   background-color: #fff;
   border-radius: 20px;
 }
-
+.text-color-section2-1{
+    color: rgb(172, 90, 208);
+}
+.text-color-section2-2{
+    color: rgb(184, 107, 186);
+}
+.text-color-section2-3{
+    color: rgb(196, 119, 163);
+}
+.text-color-section2-4{
+    color:rgb(204, 125, 151) ;
+}
+.text-color-section2-5{
+    color:rgb(214, 133, 131) ;
+}
+.text-color-section2-6{
+    color:rgb(222, 138, 111) ;
+}
+.text-color-section2-7{
+    color:rgb(237, 146, 70) ;
+}
+.text-color-section2-8{
+    color:rgb(250, 152, 0) ;
+}
+.text-color-section2-9{
+    color:rgb(160, 63, 231) ;
+}
+.text-color-section2-10{
+    color:rgb(155, 43, 243) ;
+}
+.Premium{
+    font-size: 13px;
+}
 .shape-service::after , .shape-Testimonials::after  {
   content: "";
   width: 50px;
@@ -323,6 +456,9 @@ color:rgb(248, 151, 0) ;
     top:50px;
     right:90px
 }
+.section-left{
+    width: 29%;
+}
 .call-us-home{
     width: 25%;
     border: 2px solid rgba(196, 180, 255, 0.418);
@@ -407,4 +543,62 @@ color:rgb(248, 151, 0) ;
 }
 .typing-text{
     height: 100px ;
+}
+form input.my-input-first:focus{
+    border: 6px double var(--maincolor) !important;
+}
+.input-group select.form-select:focus{
+        border: 6px double var(--maincolor) !important;
+
+}
+.textarea textarea:focus{
+            border: 6px double var(--maincolor) !important;
+
+}
+.background-check{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(245, 243, 255);
+}
+.background-check .form-check-input:checked{
+  color: #fff !important;
+background-color: var(--maincolor) !important; 
+border: 1px solid transparent !important; 
+}
+.hover-btn-send{
+    transition: all .5s ease;
+}
+.hover-btn-send:hover{
+    transform: translateY(-6px) ;
+}
+.section-right form input , .section-right .textarea textarea{
+    background-color: rgb(249, 250, 251);
+}
+.circule-shape2::after{
+   content:"";
+    width: 200px;
+    height: 200px;
+    border-top-right-radius:100% ;
+    border-bottom-right-radius:0% ;
+    background-color: rgb(245, 243, 254);
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+
+.circule-shape2::before{
+    content:"";
+    width: 140px;
+    height:140px;
+ border-radius: 100%;
+ z-index: 500;
+    background-color: transparent;
+    border: 4px solid rgb(221, 214, 255);
+    position: absolute;
+   bottom:50px;
+   left:90px
+}
+.color-footer{
+    background-color: rgb(80, 23, 150);
 }
